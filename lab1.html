@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration & Promotional Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        video, audio {
+            max-width: 100%;
+        }
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Event Registration & Promotional Portal</h1>
+    </header>
+    <main>
+        <section id="event-details">
+            <h2>Upcoming Event: Tech Conference 2023</h2>
+            <p>Join us for an exciting day of Music Summer Night.</p>
+            
+            <h3>Event Banner</h3>
+            <img src="C:\Users\STUDENTS\Downloads\download.jpg" alt="Event Banner" style="width: 800px; height: auto;">
+            
+            <h3>Promotional Video</h3>
+            <video controls>
+                <source src="C:\Users\STUDENTS\Downloads\Red and White Dynamic Are You Ready Video (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <h3>Background Audio</h3>
+            <audio controls autoplay loop>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section id="registration">
+            <h2>Register for the Event</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                
+                <label>Gender:</label>
+                <div style="display: flex; gap: 1rem;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                
+                <label for="category">Event Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="talk">Talk</option>
+                    <option value="networking">Networking</option>
+                </select>
+                
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <label for="resume">Upload Resume (optional):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
